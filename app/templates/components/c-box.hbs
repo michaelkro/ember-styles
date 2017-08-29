@@ -1,7 +1,35 @@
-{{yield}}
-{{#c-style}}
-p {
-  font-family: Helvetica;
-}
-{{/c-style}}
+<header class="c-box-header">
+  {{title}}
+</header>
+<div class="c-box-main">
+  {{yield}}
+  <a href="#">main button</a>
 
+  <div class="some-dropdown">
+    <a href="#" class="some-dropdown-button">mr droppy</a>
+  </div>
+</div>
+<footer class="c-box-footer">
+  <p>Some footer stuff</p>
+</footer>
+{{#c-style}}
+  this {
+    border: 1px solid #333;
+  }
+  * {
+    font-family: Arial;
+  }
+  header {
+    background: #333;
+    color: #fafafa;
+  }
+  footer {
+    background: #eaeaea;
+    color: #333;
+  }
+  a {
+    display: block;
+    background: #204316;
+    color: #fff;
+  }
+{{/c-style}}
